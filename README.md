@@ -321,6 +321,15 @@ end
 
 > It is possible to load the settings in an *role* or an *data bag* or leave the settings in a recipe.
 
+## Remove backup gem
+
+some times a upgrade of the backup gem goes wrong in combination with fog
+or it just stops working.
+so when adding the recipe remove.rb to your run list
+it will remove the backup and fog gem
+and then it will remove the remove recipe from the run list again
+so this will run 1 time only
+
 License and Author
 -------------------
 
